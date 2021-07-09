@@ -1,0 +1,17 @@
+{
+  "name": "4ta_entrega_proyecto_final_colacilli",
+  "version": "1.0.0",
+  "description": "Cuarta entrega del proyecto final HTML y CSS CoderHouse | Colacilli Joaquim",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss styles/main.scss styles/index.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "author": "Joaquim Colacilli",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^6.0.0",
+    "nodemon": "^2.0.7"
+  }
+}

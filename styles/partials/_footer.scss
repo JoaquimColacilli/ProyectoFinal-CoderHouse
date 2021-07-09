@@ -1,0 +1,67 @@
+$color-bg: black;
+$color-txt: white;
+$color-cpryt: #777;
+
+.footer {
+  display: flex;
+  background-color: $color-bg;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  padding-left: 50px;
+}
+
+.texto-footer {
+  display: flex;
+  color: $color-txt;
+  text-align: center;
+  font-family: "Dosis", sans-serif;
+  font-size: 25px;
+  flex-direction: column;
+  text-decoration: none;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size 0.3s;
+  &:hover,
+  &:focus {
+    background-size: 100% 2px;
+  }
+}
+
+.separacion-footer a {
+  margin: 15px;
+}
+
+.sci {
+  /* ordenar los iconos de las redes sociales*/
+  margin-top: -330px;
+  margin-right: 30px;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  & li {
+    /* ordenar las listas de los iconos de las redes sociales*/
+    list-style: none;
+    margin: 0 10px;
+
+    & a {
+      /* ordenar el texto de las listas de los iconos de las redes sociales*/
+      color: $color-txt;
+      font-size: 2em;
+      transition: 0.5s;
+      &:hover {
+        color: rgb(145, 135, 135);
+      }
+    }
+  }
+}
+
+.cpryt {
+  /*copyright text*/
+  margin-top: 250px;
+  text-align: right;
+  color: $color-cpryt;
+  margin-right: 35px;
+}
